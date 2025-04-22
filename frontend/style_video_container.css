@@ -1,0 +1,48 @@
+:root {
+    --main-color: #6991C2ff;
+    --accent-color: #8DADD0ff;
+    --banner-height: 500px;
+    --nav-color: rgba(105, 145, 194, 0);
+    --nav-height: 40px;
+    --font-main: 'Segoe UI', sans-serif;
+  
+    --pale-dogwood: #EBD0CAff;
+    --bistre: #2C2418ff;
+    --mountbatten-pink: #8F7FA3ff;
+    --mountbatten-pink-enhance: rgb(126, 99, 160);
+    --silver-lake-blue: #6991C2ff;
+    --powder-blue: #8DADD0ff;
+  }
+
+.video-container {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-left: 350px;
+}
+
+video {
+  width: 400px;
+  height: 300px;
+  background: black;
+}
+
+.controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-caption {
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    background: var(--main-color);
+    color: whitesmoke;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 10px;
+  }

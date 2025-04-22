@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Second Page</title>
+  <!-- Banner styles -->
+  <link rel="stylesheet" href="style_banner.css" />
+  <!-- Navigation styles -->
+  <link rel="stylesheet" href="style_navbar.css" />
+  <!-- Page styles -->
+  <link rel="stylesheet" href="style_leçon.css">
+  <!-- Button styles -->
+  <link rel="stylesheet" href="style_button.css">
+
+  <!-- Fonts Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <script src="https://www.w3schools.com/lib/w3data.js"></script>
+
+  <div class="banner">
+    <img src="images/banner_lsf.jpg" alt="Banner Image">
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="leçon.html">Leçon</a></li>
+    </ul>
+  </nav>
+
+  <div id="content-container"></div>
+  <iframe src="lesson1.html" scrolling="no" style="width:100%; height:100%; border:none; overflow:hidden;"></iframe>
+  <script>
+  // Adjust iframe height to match its content
+  window.onload = function() {
+    const iframe = document.querySelector('iframe');
+    iframe.onload = function() {
+      iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+    };
+  };
+  </script>
+
+  <div w3-include-html="lesson1.html"></div> 
+
+</body>
+</html>

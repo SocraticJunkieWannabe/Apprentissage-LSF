@@ -1,0 +1,45 @@
+:root {
+  --main-color: #6991C2ff;
+  --accent-color: #8DADD0ff;
+  --banner-height: 500px;
+  --nav-color: rgba(105, 145, 194, 0);
+  --nav-height: 40px;
+  --font-main: 'Segoe UI', sans-serif;
+
+  --pale-dogwood: #EBD0CAff;
+  --bistre: #2C2418ff;
+  --mountbatten-pink: #8F7FA3ff;
+  --silver-lake-blue: #6991C2ff;
+  --powder-blue: rgb(6, 7, 7);
+}
+
+/* navigation */
+.navbar {
+  background-color: var(--nav-color, #333);
+  padding: var(--nav-height) 30px;
+  position: sticky;   /* sticks to top when scrolling */
+  top: 0;
+  z-index: 100;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li a {
+  color: var(--silver-lake-blue);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 19px;
+  transition: color 0.2s ease;
+}
+
+.navbar li a:hover {
+  color: var(--bistre);;
+}
+
+

@@ -1,0 +1,47 @@
+:root {
+  --main-color: #6991C2ff;
+  --accent-color: #8DADD0ff;
+  --banner-height: 500px;
+  --nav-color: rgba(105, 145, 194, 0);
+  --nav-height: 40px;
+  --font-main: 'Segoe UI', sans-serif;
+
+  --pale-dogwood: #EBD0CAff;
+  --bistre: #2C2418ff;
+  --mountbatten-pink: #8F7FA3ff;
+  --silver-lake-blue: #6991C2ff;
+  --powder-blue: #8DADD0ff;
+}
+
+#dynamic-content {
+  height: auto;
+  max-height: none;
+  overflow: hidden; /* If you want to hide scroll completely */
+}
+
+#dynamic-content * {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding-top: calc(var(--banner-height)/2 - var(--nav-height));
+  background-color: #f9f9f9;
+}
+
+.link {
+  color: #78d37b;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+

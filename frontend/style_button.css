@@ -1,0 +1,31 @@
+:root {
+  --main-color: #6991C2ff;
+  --accent-color: #8DADD0ff;
+  --banner-height: 500px;
+  --nav-color: rgba(105, 145, 194, 0);
+  --nav-height: 40px;
+  --font-main: 'Segoe UI', sans-serif;
+
+  --pale-dogwood: #EBD0CAff;
+  --bistre: #2C2418ff;
+  --mountbatten-pink: #8F7FA3ff;
+  --mountbatten-pink-enhance: rgb(126, 99, 160);
+  --silver-lake-blue: #6991C2ff;
+  --powder-blue: #8DADD0ff;
+}
+
+/* Button styling */
+.button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: var(--mountbatten-pink);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--mountbatten-pink-enhance);
+}

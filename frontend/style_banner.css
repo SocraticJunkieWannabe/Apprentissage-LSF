@@ -1,0 +1,51 @@
+:root {
+  --main-color: #6991C2ff;
+  --accent-color: #8DADD0ff;
+  --banner-height: 500px;
+  --nav-color: rgba(105, 145, 194, 0);
+  --nav-height: 40px;
+  --font-main: 'Segoe UI', sans-serif;
+
+  --pale-dogwood: #EBD0CAff;
+  --bistre: #2C2418ff;
+  --mountbatten-pink: #8F7FA3ff;
+  --silver-lake-blue: #6991C2ff;
+  --powder-blue: #8DADD0ff;
+}
+
+/* banner */
+.banner {
+  width: 100vw;
+  height: var(--banner-height); /* Adjust this to your desired height */
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+  z-index: 1; 
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* centers the text */
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0); /* optional: semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 100;
+  padding-left: 300px;
+  letter-spacing: 350px;
+}
+
