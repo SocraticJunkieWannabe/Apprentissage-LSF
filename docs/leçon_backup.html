@@ -37,11 +37,9 @@
     fetch('lesson1.html')
       .then(response => response.text())
       .then(html => {
-        document.getElementById('video-container').innerHTML = html;
+        document.getElementById('content-container').innerHTML = html;
       });
   </script>
-
-  <div w3-include-html="lesson1.html"></div> 
 
 </body>
 </html>
