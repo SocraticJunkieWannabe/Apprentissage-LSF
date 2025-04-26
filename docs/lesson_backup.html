@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Leçon</title>
+  <!-- Banner styles -->
+  <link rel="stylesheet" href="style_banner.css" />
+  <!-- Navigation styles -->
+  <link rel="stylesheet" href="style_navbar.css" />
+  <!-- Page styles -->
+  <link rel="stylesheet" href="style_leçon.css">
+  <!-- Button styles -->
+  <link rel="stylesheet" href="style_button.css">
+
+  <!-- Fonts Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <div class="banner">
+    <img src="images/banner_lsf.jpg" alt="Banner Image">
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="lesson_backup.html">Leçon</a></li>
+    </ul>
+  </nav>
+
+  <div id="content-container"></div>
+
+  <!-- Video script -->
+  <script>
+
+  fetch('configs\\lesson1_files.json')
+    .then(response => response.json())
+    .then(files => {
+      files.forEach(file => {
+        loadFile(file);
+      });
+    });
+
+    function linkButton(div){
+      const videos = div.querySelectorAll('video');
+      const playButton = div.querySelector('#playButton');
+
+      playButton.addEventListener('click', () => {
+      let index = 0;
+
+      const playNext = () => {
+        if (index < videos.length) {
+            const current = videos[index];
+            current.currentTime = 0; // Start from beginning
+            current.play();
+
+            // When this video ends, play the next one
+            current.onended = () => {
+                index++;
+                playNext();
+            };
+          }
+        };
+        playNext();
+        });
+      }
+
+  function loadFile(filename) {
+      fetch(filename)
+        .then(response => response.text())
+        .then(html => {
+          const newFileDiv = document.createElement('div');
+          newFileDiv.innerHTML = html;
+
+          const container = document.getElementById('content-container'); // The parent div
+          container.appendChild(newFileDiv);
+
+          linkButton(newFileDiv)
+      });
+  }
+
+  </script>
+
+</body>
+</html>

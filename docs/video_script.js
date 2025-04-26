@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
 const videos = document.querySelectorAll('video');
 const playButton = document.getElementById('playSequential');

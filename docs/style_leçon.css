@@ -13,26 +13,19 @@
   --powder-blue: #8DADD0ff;
 }
 
-#dynamic-content {
-  height: auto;
-  max-height: none;
-  overflow: hidden; /* If you want to hide scroll completely */
-}
-
-#dynamic-content * {
-  box-sizing: border-box;
-}
-
 html, body {
-  margin: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: visible; /* important */
   padding: 0;
   border: 0;
-  height: 100%;
+
   font-family: 'Roboto', sans-serif;
   text-align: center;
   padding-top: calc(var(--banner-height)/2 - var(--nav-height));
   background-color: #f9f9f9;
-  overflow-y: auto;
 }
 
 .link {

@@ -14,11 +14,20 @@
     --powder-blue: #8DADD0ff;
   }
 
+.lesson-content{
+  margin-top: 20px; /* Adds space below each div */
+  margin-bottom: 20px; /* Adds space below each div */
+  height: auto;
+  overflow-x: hidden; /* no horizontal scroll */
+  overflow-y: hidden;
+}
+
 .video-container {
   display: flex;
   gap: 10px;
   overflow-x: auto;
   padding-left: 350px;
+  margin-bottom: 20px; /* Adds space below each div */
 }
 
 video {

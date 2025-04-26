@@ -13,16 +13,6 @@
   --powder-blue: #8DADD0ff;
 }
 
-#dynamic-content {
-  height: auto;
-  max-height: none;
-  overflow: hidden; /* If you want to hide scroll completely */
-}
-
-#dynamic-content * {
-  box-sizing: border-box;
-}
-
 html, body {
   margin: 0;
   padding: 0;
